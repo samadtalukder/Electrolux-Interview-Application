@@ -39,9 +39,8 @@ class MainActivity : ComponentActivity() {
                     var resultTwo by remember { mutableStateOf(0) }
 
                     LaunchedEffect(true) {
-                        resultOne = async(Dispatchers.Default) { taskOne() }.await()
-                        resultTwo = async(Dispatchers.Default) { taskTwo() }.await()
-
+                        launch(Dispatchers.Default) { resultOne = taskOne() }
+                        launch(Dispatchers.Default) { resultTwo = taskTwo() }
                     }
 
                     ShowTaskData(resultOne, resultTwo)
