@@ -26,7 +26,7 @@ class ApiWrapper(private val api: CallbackApi) {
     //Question1: Call fetchData method in apiWrapper on the main thread.
 
     private fun fetchData(): Flow<String> = flow {
-        val apiData = withContext(Dispatchers.IO) {
+        val apiData = withContext(Dispatchers.Main) {
             suspendCoroutine { ct ->
                 api.fetchData { s, error ->
                     if (error != null) {
@@ -45,9 +45,8 @@ class ApiWrapper(private val api: CallbackApi) {
 
     fun test() {
         //Question2: Call fetchData method above (which returns a flow) on a background thread.
-        runBlocking {
-            val mFlow = fetchData()
-            mFlow.collect { result ->
+        withContext(Dispatchers.IO) {
+            apiWrapper.fetchData().collect { result ->
                 Log.e("#", "Result: $result")
             }
         }
