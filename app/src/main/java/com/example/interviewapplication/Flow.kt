@@ -46,11 +46,9 @@ class ApiWrapper(private val api: CallbackApi) {
     fun test() {
         //Question2: Call fetchData method above (which returns a flow) on a background thread.
         runBlocking {
-            withContext(Dispatchers.IO) {
-                val mFlow = fetchData()
-                mFlow.collect { result ->
-                    Log.e("#", "Result: $result")
-                }
+            val mFlow = fetchData()
+            mFlow.collect { result ->
+                Log.e("#", "Result: $result")
             }
         }
     }
