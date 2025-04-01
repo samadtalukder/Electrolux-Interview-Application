@@ -4,7 +4,6 @@ import android.util.Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
@@ -26,13 +25,13 @@ class ApiWrapper(private val api: CallbackApi) {
     //Question1: Call fetchData method in apiWrapper on the main thread.
 
     private fun fetchData(): Flow<String> = flow {
-        val apiData = withContext(Dispatchers.IO) {
+        val apiData = withContext(Dispatchers.Main) {
             suspendCoroutine { ct ->
-                api.fetchData { s, error ->
-                    if (error != null) {
+                api.fetchData { success, error ->
+                    if (success != null) {
+                        ct.resume(success)
+                    } else if (error != null) {
                         ct.resumeWithException(error)
-                    } else if (s != null) {
-                        ct.resume(s)
                     } else {
                         ct.resumeWithException(NullPointerException("Data null"))
                     }
@@ -41,15 +40,27 @@ class ApiWrapper(private val api: CallbackApi) {
         }
         emit(apiData)
 
+        /*private fun fetchData(): Flow<String> = callbackFlow {
+        api.fetchData { success, error ->
+            if (error != null) {
+                close(error)
+            } else if (success != null) {
+                trySend(success)
+            }
+            close()
+        }
+        awaitClose()
+    }.flowOn(Dispatchers.Main)*/
+
     }
 
-    fun test() {
+    suspend fun test() {
         //Question2: Call fetchData method above (which returns a flow) on a background thread.
-        runBlocking {
-            val mFlow = fetchData()
-            mFlow.collect { result ->
+        withContext(Dispatchers.IO) {
+            apiWrapper.fetchData().collect { result ->
                 Log.e("#", "Result: $result")
             }
         }
+
     }
 }

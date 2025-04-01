@@ -1,6 +1,7 @@
 package com.example.interviewapplication
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -19,6 +20,8 @@ import com.example.interviewapplication.ui.theme.InterviewApplicationTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,47 +29,56 @@ class MainActivity : ComponentActivity() {
 
 
         setContent {
-
             InterviewApplicationTheme {
-
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //Question3: Call taskOne and taskTwo methods below in a way that they run in parallel.
+                    var result by remember { mutableStateOf(0) }
+                    var task1 by remember { mutableStateOf(0) }
+                    var task2 by remember { mutableStateOf(0) }
 
-                    var resultOne by remember { mutableStateOf(0) }
-                    var resultTwo by remember { mutableStateOf(0) }
+                    LaunchedEffect(Unit) {
+                        task1 = async { taskOne() }.await()
+                        task2 = async { taskTwo() }.await()
+                        result = task1 + task2
 
-                    LaunchedEffect(true) {
-                        resultOne = async(Dispatchers.Default) { taskOne() }.await()
-                        resultTwo = async(Dispatchers.Default) { taskTwo() }.await()
-
+                        apiWrapper.test()
                     }
 
-                    ShowTaskData(resultOne, resultTwo)
-
+                    ShowTaskData(resultOne = task1, resultTwo = task2, result = result)
                 }
             }
         }
     }
 
     @Composable
-    fun ShowTaskData(resultOne: Int, resultTwo: Int) {
+    fun ShowTaskData(resultOne: Int, resultTwo: Int, result: Int) {
         Column {
-            Text("TaskOne Result: $resultOne")
-            Text("TaskTwo Result: $resultTwo")
+            Text("TaskOne: $resultOne")
+            Text("TaskTwo: $resultTwo")
+            Text("Result: $result")
         }
     }
 
 
     private suspend fun taskOne(): Int {
-        delay(2000)
-        return 10
+        return withContext(Dispatchers.Default) {
+            delay(2000)
+            return@withContext 10
+        }
     }
 
     private suspend fun taskTwo(): Int {
-        delay(2000)
-        return 10
+        return withContext(Dispatchers.Default) {
+            delay(2000)
+            return@withContext 10
+        }
     }
+
+    private suspend fun getApiResult(){
+        Log.e("","apiResult: ${apiWrapper.test()}")
+    }
+
 }
