@@ -1,7 +1,6 @@
 package com.example.interviewapplication
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -20,7 +19,6 @@ import com.example.interviewapplication.ui.theme.InterviewApplicationTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class MainActivity : ComponentActivity() {
@@ -76,9 +74,4 @@ class MainActivity : ComponentActivity() {
             return@withContext 10
         }
     }
-
-    private suspend fun getApiResult(){
-        Log.e("","apiResult: ${apiWrapper.test()}")
-    }
-
 }
