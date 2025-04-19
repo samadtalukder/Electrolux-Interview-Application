@@ -1,0 +1,404 @@
+04-11 18:58:06.921 30091 30114 I TestRunner: started: testExists(com.example.interviewapplication.MainActivityTest)
+04-11 18:58:06.933 30091 30114 W FileTestStorage: Output properties is not supported.
+04-11 18:58:06.933 30091 30114 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+04-11 18:58:06.935 30091 30091 D EventInjectionStrategy: Creating injection strategy with input manager.
+04-11 18:58:06.936 30091 30091 W viewapplication: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+04-11 18:58:06.936 30091 30091 W viewapplication: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+04-11 18:58:06.936 30091 30091 W viewapplication: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+04-11 18:58:06.938 30091 30091 W viewapplication: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+04-11 18:58:06.938 30091 30091 W viewapplication: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+04-11 18:58:06.938 30091 30091 W viewapplication: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+04-11 18:58:06.938 30091 30114 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@db2c036]
+04-11 18:58:06.944 30091 30114 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-11 18:58:06.969 30091 30118 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+04-11 18:58:06.969 30091 30118 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+04-11 18:58:06.970 30091 30118 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+04-11 18:58:06.972 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8da42d4 in: PRE_ON_CREATE
+04-11 18:58:06.972 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-11 18:58:06.979   768   900 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:06.988 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8da42d4 in: CREATED
+04-11 18:58:06.988 30091 30091 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@8da42d4
+04-11 18:58:06.989 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8da42d4 in: STARTED
+04-11 18:58:06.989 30091 30091 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@8da42d4
+04-11 18:58:06.989   398   398 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+04-11 18:58:06.991 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8da42d4 in: RESUMED
+04-11 18:58:06.991 30091 30091 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@8da42d4
+04-11 18:58:06.996  1038  1781 D EGL_emulation: app_time_stats: avg=37.00ms min=12.71ms max=938.96ms count=45
+04-11 18:58:06.998 30091 30091 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10247; state: DISABLED
+04-11 18:58:06.999 30091 30091 W OpenGLRenderer: Unknown dataspace 0
+04-11 18:58:07.015   398   752 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10247 pid=0
+04-11 18:58:07.015   398   752 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10247 => denied (428 us)
+04-11 18:58:07.015   398   953 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10247 pid=30091
+04-11 18:58:07.015   398   953 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10247 => denied (213 us)
+04-11 18:58:07.015   398   752 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10247 pid=0
+04-11 18:58:07.015   398   752 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10247 => denied (320 us)
+04-11 18:58:07.015   398   752 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10247 pid=0
+04-11 18:58:07.015   398   752 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10247 => denied (27 us)
+04-11 18:58:07.015   398   953 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10247 pid=30091
+04-11 18:58:07.015   398   953 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10247 => denied (223 us)
+04-11 18:58:07.019 30091 30116 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-11 18:58:07.019 30091 30116 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-11 18:58:07.027   163   163 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-11 18:58:07.027 30091 30116 I Gralloc4: mapper 4.x is not supported
+04-11 18:58:07.028   768   900 D EGL_emulation: app_time_stats: avg=7015.01ms min=7015.01ms max=7015.01ms count=1
+04-11 18:58:07.032 30091 30116 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:07.044   553  1403 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10247 pid=0
+04-11 18:58:07.044   553  1403 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10247 => denied (161 us)
+04-11 18:58:07.044   553  1403 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10247 pid=0
+04-11 18:58:07.044   553  1403 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10247 => denied (14 us)
+04-11 18:58:07.044   553  1403 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10247 pid=0
+04-11 18:58:07.044   553  1403 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10247 => denied (4 us)
+04-11 18:58:07.046   553   571 W ziparchive: Unable to open '/data/app/~~SxvWD2o5dcp3UtfDv-CR4Q==/com.example.interviewapplication-kEwT3jbJssg2qqJc0qK_oA==/base.dm': No such file or directory
+04-11 18:58:07.047   553   571 I ActivityTaskManager: Displayed com.example.interviewapplication/androidx.activity.ComponentActivity for user 0: +98ms
+04-11 18:58:07.061   553  2531 I ImeTracker: com.example.interviewapplication:5188e7fd: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+04-11 18:58:07.061   553  2531 I ImeTracker: com.example.interviewapplication:5188e7fd: onCancelled at PHASE_SERVER_SHOULD_HIDE
+04-11 18:58:07.061  8966  8966 I ckty    : onPause
+04-11 18:58:07.069  9648  9648 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2043
+04-11 18:58:07.071  9648  9648 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+04-11 18:58:07.071  9648  9648 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1293 onStartInput(EditorInfo{EditorInfo{packageName=com.example.interviewapplication, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+04-11 18:58:07.075  9648  9648 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: EmojiCompatManager.getEmojiCompatIfLoaded():343 EmojiCompat.init() was never called.
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: java.lang.IllegalStateException: EmojiCompat is not initialized. Please call EmojiCompat.init() first
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at asx.p(PG:6)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at axb.b(PG:13)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at jnr.b(PG:2)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at jnr.c(PG:4)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at jnr.f(PG:3)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at jnx.c(PG:3)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at kif.cz(PG:47)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at lhl.run(PG:1025)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at jaf.execute(PG:12)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at nco.v(PG:13)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at lhn.m(PG:96)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at lhn.k(PG:25)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at kgn.onStartInput(PG:250)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:3115)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:824)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInput(InputMethodService.java:853)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:197)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.os.Looper.loopOnce(Looper.java:205)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.os.Looper.loop(Looper.java:294)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+04-11 18:58:07.076  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+04-11 18:58:07.079  8966 12862 V ClearcutMetricXmitter: Transmission is done.
+04-11 18:58:07.312  1038  2006 D OneSearchSuggestProvider: Shut down the binder channel
+04-11 18:58:07.312  8966  8966 I ckty    : onStop
+04-11 18:58:07.313  1038  1100 I ImeTracker: com.google.android.apps.nexuslauncher:f9c0aa6: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+04-11 18:58:07.313  1038  1100 I ImeTracker: com.google.android.apps.nexuslauncher:f9c0aa6: onFailed at PHASE_CLIENT_VIEW_SERVED
+04-11 18:58:07.313  1038  2238 I IPCThreadState: oneway function results for code 2 on binder at 0xb40000749f684850 will be dropped but finished with status UNKNOWN_TRANSACTION
+04-11 18:58:07.313 30091 30114 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@fd5a7d0]
+04-11 18:58:07.313 30091 30091 E IdlingResourceRegistry: Attempted to register resource with same names: Compose-Espresso link. R1: androidx.compose.ui.test.junit4.EspressoLink@fd5a7d0 R2: androidx.compose.ui.test.junit4.EspressoLink@db2c036.
+04-11 18:58:07.313 30091 30091 E IdlingResourceRegistry: Duplicate resource registration will be ignored.
+04-11 18:58:07.317 30091 30114 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-11 18:58:07.325 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8da42d4 in: PAUSED
+04-11 18:58:07.325 30091 30091 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@8da42d4
+04-11 18:58:07.325 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-11 18:58:07.329   768   863 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@70b9844
+04-11 18:58:07.329   553  2524 W InputManager-JNI: Input channel object 'd0abb13 Splash Screen com.example.interviewapplication (client)' was disposed without first being removed with the input manager!
+04-11 18:58:07.331 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@4482e3d in: PRE_ON_CREATE
+04-11 18:58:07.331 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the activity instance does not match. currentActivity=androidx.activity.ComponentActivity@8da42d4, receivedActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.331 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-11 18:58:07.333 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@4482e3d in: CREATED
+04-11 18:58:07.333 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the activity instance does not match. currentActivity=androidx.activity.ComponentActivity@8da42d4, receivedActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.334 30091 30091 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.334 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@4482e3d in: STARTED
+04-11 18:58:07.334 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the activity instance does not match. currentActivity=androidx.activity.ComponentActivity@8da42d4, receivedActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.334 30091 30091 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.335 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@4482e3d in: RESUMED
+04-11 18:58:07.335 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the activity instance does not match. currentActivity=androidx.activity.ComponentActivity@8da42d4, receivedActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.335 30091 30091 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.339   398   398 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+04-11 18:58:07.343   768   900 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:07.345 30091 30116 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:07.358   553   571 I ActivityTaskManager: Displayed com.example.interviewapplication/androidx.activity.ComponentActivity for user 0: +36ms
+04-11 18:58:07.474   553  2524 I ImeTracker: com.example.interviewapplication:e808d717: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+04-11 18:58:07.474   553  2524 I ImeTracker: com.example.interviewapplication:e808d717: onCancelled at PHASE_SERVER_SHOULD_HIDE
+04-11 18:58:07.475  9648  9648 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2043
+04-11 18:58:07.476  9648  9648 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+04-11 18:58:07.476  9648  9648 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1293 onStartInput(EditorInfo{EditorInfo{packageName=com.example.interviewapplication, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+04-11 18:58:07.476  9648  9648 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: EmojiCompatManager.getEmojiCompatIfLoaded():343 EmojiCompat.init() was never called.
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: java.lang.IllegalStateException: EmojiCompat is not initialized. Please call EmojiCompat.init() first
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at asx.p(PG:6)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at axb.b(PG:13)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at jnr.b(PG:2)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at jnr.c(PG:4)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at jnr.f(PG:3)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at jnx.c(PG:3)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at kif.cz(PG:47)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at lhl.run(PG:1025)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at jaf.execute(PG:12)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at nco.v(PG:13)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at lhn.m(PG:96)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at lhn.k(PG:25)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at kgn.onStartInput(PG:250)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:3115)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:824)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInput(InputMethodService.java:853)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:197)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.os.Looper.loopOnce(Looper.java:205)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.os.Looper.loop(Looper.java:294)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+04-11 18:58:07.476  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+04-11 18:58:07.499  1266  1381 I FontLog : (REDACTED) Received query %s, URI %s
+04-11 18:58:07.499  1266  1381 I FontLog : (REDACTED) Query [%s] resolved to %s
+04-11 18:58:07.500  1266  1381 I FontLog : (REDACTED) Fetch %s end status %s
+04-11 18:58:07.502  1266  1381 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+04-11 18:58:07.508  1266  1381 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+04-11 18:58:07.592   768   900 D EGL_emulation: app_time_stats: avg=709.67ms min=14.06ms max=8083.74ms count=12
+04-11 18:58:07.659   768   863 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@f7133d3
+04-11 18:58:07.659   553  2524 W InputManager-JNI: Input channel object '5347f8 Splash Screen com.example.interviewapplication (client)' was disposed without first being removed with the input manager!
+04-11 18:58:07.862 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8da42d4 in: STOPPED
+04-11 18:58:07.862 30091 30091 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@8da42d4
+04-11 18:58:07.862 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the activity instance does not match. currentActivity=androidx.activity.ComponentActivity@4482e3d, receivedActivity=androidx.activity.ComponentActivity@8da42d4
+04-11 18:58:07.864 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8da42d4 in: DESTROYED
+04-11 18:58:07.864 30091 30091 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+04-11 18:58:07.864 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the activity instance does not match. currentActivity=androidx.activity.ComponentActivity@4482e3d, receivedActivity=androidx.activity.ComponentActivity@8da42d4
+04-11 18:58:07.865 30091 30091 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@40d59b8
+04-11 18:58:07.866   553  2524 W InputManager-JNI: Input channel object 'ff91d98 com.example.interviewapplication/androidx.activity.ComponentActivity (client)' was disposed without first being removed with the input manager!
+04-11 18:58:07.898 30091 30091 W viewapplication: Method java.lang.Object androidx.compose.runtime.snapshots.SnapshotStateMap.mutate(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+04-11 18:58:07.898 30091 30091 W viewapplication: Common causes for lock verification issues are non-optimized dex code
+04-11 18:58:07.898 30091 30091 W viewapplication: and incorrect proguard optimizations.
+04-11 18:58:07.898 30091 30091 W viewapplication: Method void androidx.compose.runtime.snapshots.SnapshotStateMap.update(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+04-11 18:58:07.898 30091 30091 W viewapplication: Method boolean androidx.compose.runtime.snapshots.SnapshotStateMap.removeIf$runtime_release(kotlin.jvm.functions.Function1) failed lock verification and will run slower.
+04-11 18:58:07.937 30091 30091 E IdlingResourceRegistry: Attempted to register resource with same names: Compose-Espresso link. R1: androidx.compose.ui.test.junit4.EspressoLink@fd5a7d0 R2: androidx.compose.ui.test.junit4.EspressoLink@db2c036.
+04-11 18:58:07.937 30091 30091 E IdlingResourceRegistry: Duplicate resource registration will be ignored.
+04-11 18:58:07.965 30091 30091 E IdlingResourceRegistry: Attempted to register resource with same names: Compose-Espresso link. R1: androidx.compose.ui.test.junit4.EspressoLink@fd5a7d0 R2: androidx.compose.ui.test.junit4.EspressoLink@db2c036.
+04-11 18:58:07.965 30091 30091 E IdlingResourceRegistry: Duplicate resource registration will be ignored.
+04-11 18:58:07.969 30091 30114 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@fd5a7d0]
+04-11 18:58:07.981 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@4482e3d in: PAUSED
+04-11 18:58:07.981 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+04-11 18:58:07.982 30091 30091 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:07.986   350   350 D Zygote  : Forked child process 30131
+04-11 18:58:07.989   398   398 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+04-11 18:58:07.993   768   900 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:08.017 30131 30131 I pplication.test: Late-enabling -Xcheck:jni
+04-11 18:58:08.028 30131 30131 I pplication.test: Using CollectorTypeCC GC.
+04-11 18:58:08.034   426   439 I adbd    : jdwp connection from 30131
+04-11 18:58:08.041   768   900 D EGL_emulation: app_time_stats: avg=37.46ms min=11.50ms max=466.18ms count=27
+04-11 18:58:08.072 30131 30131 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10248; state: ENABLED
+04-11 18:58:08.072 30131 30131 D CompatibilityChangeReporter: Compat change id reported: 242716250; UID 10248; state: DISABLED
+04-11 18:58:08.077 30131 30131 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-11 18:58:08.079 30131 30131 D nativeloader: Configuring clns-6 for other apk /system/framework/android.test.mock.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/data/app/~~2uoUuDDJ18M0R3J9fT6BYg==/com.example.interviewapplication.test-3N46683YSzqzh_6Y_2ZZhQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.interviewapplication.test
+04-11 18:58:08.080 30131 30131 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-11 18:58:08.080 30131 30131 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.runner.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/data/app/~~2uoUuDDJ18M0R3J9fT6BYg==/com.example.interviewapplication.test-3N46683YSzqzh_6Y_2ZZhQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.interviewapplication.test
+04-11 18:58:08.081 30131 30131 W ziparchive: Unable to open '/data/app/~~2uoUuDDJ18M0R3J9fT6BYg==/com.example.interviewapplication.test-3N46683YSzqzh_6Y_2ZZhQ==/base.dm': No such file or directory
+04-11 18:58:08.081 30131 30131 W ziparchive: Unable to open '/data/app/~~2uoUuDDJ18M0R3J9fT6BYg==/com.example.interviewapplication.test-3N46683YSzqzh_6Y_2ZZhQ==/base.dm': No such file or directory
+04-11 18:58:08.093 30131 30131 D nativeloader: Configuring clns-8 for other apk /data/app/~~2uoUuDDJ18M0R3J9fT6BYg==/com.example.interviewapplication.test-3N46683YSzqzh_6Y_2ZZhQ==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~2uoUuDDJ18M0R3J9fT6BYg==/com.example.interviewapplication.test-3N46683YSzqzh_6Y_2ZZhQ==/lib/arm64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.interviewapplication.test
+04-11 18:58:08.097 30131 30131 V GraphicsEnvironment: Currently set values for:
+04-11 18:58:08.097 30131 30131 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+04-11 18:58:08.097 30131 30131 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+04-11 18:58:08.097 30131 30131 V GraphicsEnvironment: ANGLE GameManagerService for com.example.interviewapplication.test: false
+04-11 18:58:08.097 30131 30131 V GraphicsEnvironment: com.example.interviewapplication.test is not listed in per-application setting
+04-11 18:58:08.097 30131 30131 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+04-11 18:58:08.104 30131 30154 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+04-11 18:58:08.104 30131 30154 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+04-11 18:58:08.105 30131 30154 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+04-11 18:58:08.115 30131 30131 D CompatibilityChangeReporter: Compat change id reported: 237531167; UID 10248; state: DISABLED
+04-11 18:58:08.116 30131 30131 W OpenGLRenderer: Unknown dataspace 0
+04-11 18:58:08.127   398   953 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10248 pid=0
+04-11 18:58:08.127   398   953 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10248 => denied (183 us)
+04-11 18:58:08.127   398   441 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10248 pid=30131
+04-11 18:58:08.127   398   953 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10248 pid=0
+04-11 18:58:08.127   398   953 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10248 => denied (200 us)
+04-11 18:58:08.127   398   441 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10248 => denied (288 us)
+04-11 18:58:08.127   398   441 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10248 pid=30131
+04-11 18:58:08.127   398   441 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10248 => denied (222 us)
+04-11 18:58:08.128   398   953 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10248 pid=0
+04-11 18:58:08.128   398   953 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10248 => denied (339 us)
+04-11 18:58:08.132 30131 30152 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-11 18:58:08.132 30131 30152 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+04-11 18:58:08.141   163   163 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+04-11 18:58:08.141 30131 30152 I Gralloc4: mapper 4.x is not supported
+04-11 18:58:08.145 30131 30152 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:08.156   553  1403 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10248 pid=0
+04-11 18:58:08.156   553  1403 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10248 => denied (292 us)
+04-11 18:58:08.156   553  1403 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10248 pid=0
+04-11 18:58:08.156   553  1403 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10248 => denied (18 us)
+04-11 18:58:08.156   553  1403 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10248 pid=0
+04-11 18:58:08.156   553  1403 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10248 => denied (19 us)
+04-11 18:58:08.162  1038  1101 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+04-11 18:58:08.162   553  1657 W AppSearchIcing: icing-search-engine.cc:283: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: Failed to fetch suggestions from AppSearch, fallback to AGA
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:308)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:323)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:684)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:486)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2138)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.H0.onResult(Unknown Source:59)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(SearchSessionUtil.java:129)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$_nlk9WiPjSfaAsqKYmp0aPvSRC0(SearchSessionUtil.java:1)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:13)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.os.Handler.handleCallback(Handler.java:958)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.os.Looper.loopOnce(Looper.java:205)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.os.Looper.loop(Looper.java:294)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: Caused by: java.util.NoSuchElementException: No value present
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at java.util.Optional.get(Optional.java:144)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.H0.onResult(Unknown Source:16)
+04-11 18:58:08.163  1038  2006 E OneSearchSuggestProvider: 	... 8 more
+04-11 18:58:08.164  1038  2006 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=z1{delegate=s1{logId=137, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=X1.T@95c302c
+04-11 18:58:08.167  1581  1923 I AiAiEcho: Predicting[0]:
+04-11 18:58:08.167  1581  1923 I AiAiEcho: EchoTargets:
+04-11 18:58:08.167  1581  1923 I AiAiEcho: Filtered by AiAi flag check:
+04-11 18:58:08.167  1581  1923 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+04-11 18:58:08.168  1581  1923 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+04-11 18:58:08.178  1038  1781 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:08.179  8966  9160 E OpenGLRenderer: Unable to match the desired swap behavior.
+04-11 18:58:08.212 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@4482e3d in: STOPPED
+04-11 18:58:08.212 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+04-11 18:58:08.212 30091 30091 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@4482e3d
+04-11 18:58:08.212 30091 30091 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@4482e3d in: DESTROYED
+04-11 18:58:08.213 30091 30091 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was DESTROYED
+04-11 18:58:08.213 30091 30091 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+04-11 18:58:08.213 30091 30091 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=falsecallback=android.view.ViewRootImpl$$ExternalSyntheticLambda17@2500e71
+04-11 18:58:08.214   553  2531 W InputManager-JNI: Input channel object '8b87d0d com.example.interviewapplication/androidx.activity.ComponentActivity (client)' was disposed without first being removed with the input manager!
+04-11 18:58:08.216   553  2532 I ImeTracker: com.google.android.apps.nexuslauncher:ff893480: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+04-11 18:58:08.216   553  2532 I ImeTracker: com.google.android.apps.nexuslauncher:ff893480: onCancelled at PHASE_SERVER_SHOULD_HIDE
+04-11 18:58:08.216  8966  8966 I ckty    : onStart
+04-11 18:58:08.218  9648  9648 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2043
+04-11 18:58:08.218  9648  9648 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+04-11 18:58:08.218  9648  9648 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1293 onStartInput(EditorInfo{EditorInfo{packageName=com.google.android.apps.nexuslauncher, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+04-11 18:58:08.219  8966  8966 I cjdp    : (REDACTED) [%s] onStart()
+04-11 18:58:08.219  8966  8966 I cjfo    : Reloading theme data
+04-11 18:58:08.219 30091 30114 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.junit4.EspressoLink@db2c036]
+04-11 18:58:08.219  9648  9648 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: EmojiCompatManager.getEmojiCompatIfLoaded():343 EmojiCompat.init() was never called.
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: java.lang.IllegalStateException: EmojiCompat is not initialized. Please call EmojiCompat.init() first
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at asx.p(PG:6)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at axb.b(PG:13)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at jnr.b(PG:2)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at jnr.c(PG:4)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at jnr.f(PG:3)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at jnx.c(PG:3)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at kif.cz(PG:47)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at lhl.run(PG:1025)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at jaf.execute(PG:12)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at nco.v(PG:13)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at lhn.m(PG:96)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at lhn.k(PG:25)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at kgn.onStartInput(PG:250)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:3115)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:824)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInput(InputMethodService.java:853)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:197)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.os.Looper.loopOnce(Looper.java:205)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.os.Looper.loop(Looper.java:294)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at android.app.ActivityThread.main(ActivityThread.java:8177)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at java.lang.reflect.Method.invoke(Native Method)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+04-11 18:58:08.219  9648  9648 I EmojiCompatManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+04-11 18:58:08.219 30091 30114 E TestRunner: failed: testExists(com.example.interviewapplication.MainActivityTest)
+04-11 18:58:08.219 30091 30114 E TestRunner: ----- begin exception -----
+04-11 18:58:08.220  8966  8966 I ckty    : onResume
+04-11 18:58:08.223  8966  8966 I fpcm    : (REDACTED) Created gRPC endpoint for service %s
+04-11 18:58:08.224 30091 30114 E TestRunner: java.lang.AssertionError: Failed to assert the following: (Text + EditableText contains '0' (ignoreCase: false))
+04-11 18:58:08.224 30091 30114 E TestRunner: Semantics of the node:
+04-11 18:58:08.224 30091 30114 E TestRunner: Node #3 at (l=0.0, t=132.0, r=179.0, b=181.0)px, Tag: 'taskOneText'
+04-11 18:58:08.224 30091 30114 E TestRunner: Text = '[TaskOne: 0]'
+04-11 18:58:08.224 30091 30114 E TestRunner: Actions = [GetTextLayoutResult]
+04-11 18:58:08.224 30091 30114 E TestRunner: Has 2 siblings
+04-11 18:58:08.224 30091 30114 E TestRunner: Selector used: (TestTag = 'taskOneText')
+04-11 18:58:08.224 30091 30114 E TestRunner:
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:270)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:260)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:214)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AssertionsKt.assertTextContains$default(Assertions.kt:209)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at com.example.interviewapplication.MainActivityTest$testExists$1.invoke(MainActivityTest.kt:92)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at com.example.interviewapplication.MainActivityTest$testExists$1.invoke(MainActivityTest.kt:84)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.ComposeUiTest_androidKt$runAndroidComposeUiTest$1.invoke(ComposeUiTest.android.kt:120)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.ComposeUiTest_androidKt$runAndroidComposeUiTest$1.invoke(ComposeUiTest.android.kt:118)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.withDisposableContent(ComposeUiTest.android.kt:512)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:330)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTextInputService(ComposeUiTest.android.kt:396)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTextInputService(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:329)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withComposeIdlingResource(ComposeUiTest.android.kt:383)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withComposeIdlingResource(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt:328)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withWindowRecomposer(ComposeUiTest.android.kt:357)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withWindowRecomposer(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1.invoke(ComposeUiTest.android.kt:327)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTestCoroutines(ComposeUiTest.android.kt:370)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTestCoroutines(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1.invoke(ComposeUiTest.android.kt:326)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.EspressoLink.withStrategy(EspressoLink.android.kt:66)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt:325)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.IdlingResourceRegistry.withRegistry(IdlingResourceRegistry.jvm.kt:157)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1.invoke(ComposeUiTest.android.kt:324)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.ComposeRootRegistry.withRegistry(ComposeRootRegistry.android.kt:146)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:323)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.ComposeUiTest_androidKt.runAndroidComposeUiTest(ComposeUiTest.android.kt:118)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.ComposeUiTest_androidKt.runComposeUiTest(ComposeUiTest.android.kt:65)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.ComposeUiTest_androidKt.runComposeUiTest$default(ComposeUiTest.android.kt:64)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at com.example.interviewapplication.MainActivityTest.testExists(MainActivityTest.kt:84)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt:272)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt:271)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.withDisposableContent(ComposeUiTest.android.kt:512)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:330)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTextInputService(ComposeUiTest.android.kt:396)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTextInputService(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:329)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withComposeIdlingResource(ComposeUiTest.android.kt:383)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withComposeIdlingResource(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt:328)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withWindowRecomposer(ComposeUiTest.android.kt:357)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withWindowRecomposer(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1.invoke(ComposeUiTest.android.kt:327)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTestCoroutines(ComposeUiTest.android.kt:370)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTestCoroutines(ComposeUiTest.android.kt:234)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1.invoke(ComposeUiTest.android.kt:326)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.EspressoLink.withStrategy(EspressoLink.android.kt:66)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt:325)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.IdlingResourceRegistry.withRegistry(IdlingResourceRegistry.jvm.kt:157)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1.invoke(ComposeUiTest.android.kt:324)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.ComposeRootRegistry.withRegistry(ComposeRootRegistry.android.kt:146)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:323)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:271)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:67)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:446)
+04-11 18:58:08.224 30091 30114 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)
+04-11 18:58:08.224 30091 30114 E TestRunner: ----- end exception -----
+04-11 18:58:08.229 30091 30114 I TestRunner: finished: testExists(com.example.interviewapplication.MainActivityTest)

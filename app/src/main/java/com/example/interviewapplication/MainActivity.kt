@@ -15,10 +15,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import com.example.interviewapplication.ui.theme.InterviewApplicationTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class MainActivity : ComponentActivity() {
@@ -34,29 +36,24 @@ class MainActivity : ComponentActivity() {
                 ) {
                     //Question3: Call taskOne and taskTwo methods below in a way that they run in parallel.
                     var result by remember { mutableStateOf(0) }
-                    var task1 by remember { mutableStateOf(0) }
-                    var task2 by remember { mutableStateOf(0) }
+                    var taskOne by remember { mutableStateOf(0) }
+                    var taskTwo by remember { mutableStateOf(0) }
 
                     LaunchedEffect(Unit) {
+                        /*
                         task1 = async { taskOne() }.await()
                         task2 = async { taskTwo() }.await()
                         result = task1 + task2
-
                         apiWrapper.test()
+                        */
+                        launch { taskOne = taskOne() }
+                        launch { taskTwo = taskTwo() }
                     }
 
-                    ShowTaskData(resultOne = task1, resultTwo = task2, result = result)
+                    ShowTaskData(resultOne = taskOne, resultTwo = taskTwo, result = result)
+
                 }
             }
-        }
-    }
-
-    @Composable
-    fun ShowTaskData(resultOne: Int, resultTwo: Int, result: Int) {
-        Column {
-            Text("TaskOne: $resultOne")
-            Text("TaskTwo: $resultTwo")
-            Text("Result: $result")
         }
     }
 
@@ -71,7 +68,16 @@ class MainActivity : ComponentActivity() {
     private suspend fun taskTwo(): Int {
         return withContext(Dispatchers.Default) {
             delay(2000)
-            return@withContext 10
+            return@withContext 20
         }
+    }
+}
+
+@Composable
+fun ShowTaskData(resultOne: Int, resultTwo: Int, result: Int) {
+    Column {
+        Text("TaskOne: $resultOne", modifier = Modifier.testTag("taskOneText"))
+        Text("TaskTwo: $resultTwo", modifier = Modifier.testTag("taskTwoText"))
+        Text("Result: $result", modifier = Modifier.testTag("resultText"))
     }
 }

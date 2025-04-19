@@ -1,0 +1,73 @@
+# 2025-04-11T12:58:11.888Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: FAILED
+test_result {
+  test_case {
+    test_class: "MainActivityTest"
+    test_package: "com.example.interviewapplication"
+    test_method: "testExists"
+    start_time {
+      seconds: 1744376290
+      nanos: 149000000
+    }
+    end_time {
+      seconds: 1744376291
+      nanos: 433000000
+    }
+  }
+  test_status: FAILED
+  error {
+    error_message: "java.lang.AssertionError: Failed to assert the following: (Text + EditableText contains \'0\' (ignoreCase: false))\nSemantics of the node:\nNode #3 at (l=0.0, t=132.0, r=179.0, b=181.0)px, Tag: \'taskOneText\'\nText = \'[TaskOne: 0]\'\nActions = [GetTextLayoutResult]\nHas 2 siblings\nSelector used: (TestTag = \'taskOneText\')\n\nat androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:270)\nat androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:260)\nat androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:214)\nat androidx.compose.ui.test.AssertionsKt.assertTextContains$default(Assertions.kt:209)\nat com.example.interviewapplication.MainActivityTest$testExists$1.invoke(MainActivityTest.kt:92)\nat com.example.interviewapplication.MainActivityTest$testExists$1.invoke(MainActivityTest.kt:84)\nat androidx.compose.ui.test.ComposeUiTest_androidKt$runAndroidComposeUiTest$1.invoke(ComposeUiTest.android.kt:120)\nat androidx.compose.ui.test.ComposeUiTest_androidKt$runAndroidComposeUiTest$1.invoke(ComposeUiTest.android.kt:118)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.withDisposableContent(ComposeUiTest.android.kt:512)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:330)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTextInputService(ComposeUiTest.android.kt:396)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTextInputService(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:329)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withComposeIdlingResource(ComposeUiTest.android.kt:383)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withComposeIdlingResource(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt:328)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withWindowRecomposer(ComposeUiTest.android.kt:357)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withWindowRecomposer(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1.invoke(ComposeUiTest.android.kt:327)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTestCoroutines(ComposeUiTest.android.kt:370)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTestCoroutines(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1.invoke(ComposeUiTest.android.kt:326)\nat androidx.compose.ui.test.junit4.EspressoLink.withStrategy(EspressoLink.android.kt:66)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt:325)\nat androidx.compose.ui.test.junit4.IdlingResourceRegistry.withRegistry(IdlingResourceRegistry.jvm.kt:157)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1.invoke(ComposeUiTest.android.kt:324)\nat androidx.compose.ui.test.junit4.ComposeRootRegistry.withRegistry(ComposeRootRegistry.android.kt:146)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:323)\nat androidx.compose.ui.test.ComposeUiTest_androidKt.runAndroidComposeUiTest(ComposeUiTest.android.kt:118)\nat androidx.compose.ui.test.ComposeUiTest_androidKt.runComposeUiTest(ComposeUiTest.android.kt:65)\nat androidx.compose.ui.test.ComposeUiTest_androidKt.runComposeUiTest$default(ComposeUiTest.android.kt:64)\nat com.example.interviewapplication.MainActivityTest.testExists(MainActivityTest.kt:84)"
+    error_type: "java.lang.AssertionError"
+    stack_trace: "java.lang.AssertionError: Failed to assert the following: (Text + EditableText contains \'0\' (ignoreCase: false))\nSemantics of the node:\nNode #3 at (l=0.0, t=132.0, r=179.0, b=181.0)px, Tag: \'taskOneText\'\nText = \'[TaskOne: 0]\'\nActions = [GetTextLayoutResult]\nHas 2 siblings\nSelector used: (TestTag = \'taskOneText\')\n\nat androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:270)\nat androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:260)\nat androidx.compose.ui.test.AssertionsKt.assertTextContains(Assertions.kt:214)\nat androidx.compose.ui.test.AssertionsKt.assertTextContains$default(Assertions.kt:209)\nat com.example.interviewapplication.MainActivityTest$testExists$1.invoke(MainActivityTest.kt:92)\nat com.example.interviewapplication.MainActivityTest$testExists$1.invoke(MainActivityTest.kt:84)\nat androidx.compose.ui.test.ComposeUiTest_androidKt$runAndroidComposeUiTest$1.invoke(ComposeUiTest.android.kt:120)\nat androidx.compose.ui.test.ComposeUiTest_androidKt$runAndroidComposeUiTest$1.invoke(ComposeUiTest.android.kt:118)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.withDisposableContent(ComposeUiTest.android.kt:512)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:330)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTextInputService(ComposeUiTest.android.kt:396)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTextInputService(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1$1.invoke(ComposeUiTest.android.kt:329)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withComposeIdlingResource(ComposeUiTest.android.kt:383)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withComposeIdlingResource(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt:328)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withWindowRecomposer(ComposeUiTest.android.kt:357)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withWindowRecomposer(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1.invoke(ComposeUiTest.android.kt:327)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.withTestCoroutines(ComposeUiTest.android.kt:370)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$withTestCoroutines(ComposeUiTest.android.kt:234)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1.invoke(ComposeUiTest.android.kt:326)\nat androidx.compose.ui.test.junit4.EspressoLink.withStrategy(EspressoLink.android.kt:66)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt:325)\nat androidx.compose.ui.test.junit4.IdlingResourceRegistry.withRegistry(IdlingResourceRegistry.jvm.kt:157)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1.invoke(ComposeUiTest.android.kt:324)\nat androidx.compose.ui.test.junit4.ComposeRootRegistry.withRegistry(ComposeRootRegistry.android.kt:146)\nat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:323)\nat androidx.compose.ui.test.ComposeUiTest_androidKt.runAndroidComposeUiTest(ComposeUiTest.android.kt:118)\nat androidx.compose.ui.test.ComposeUiTest_androidKt.runComposeUiTest(ComposeUiTest.android.kt:65)\nat androidx.compose.ui.test.ComposeUiTest_androidKt.runComposeUiTest$default(ComposeUiTest.android.kt:64)\nat com.example.interviewapplication.MainActivityTest.testExists(MainActivityTest.kt:84)"
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/st/Android-Workplace/ElectroluxInterview/app/build/outputs/androidTest-results/connected/debug/Pixel_8_API_34(AVD) - 14/logcat-com.example.interviewapplication.MainActivityTest-testExists.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/st/Android-Workplace/ElectroluxInterview/app/build/outputs/androidTest-results/connected/debug/Pixel_8_API_34(AVD) - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/st/Android-Workplace/ElectroluxInterview/app/build/outputs/androidTest-results/connected/debug/Pixel_8_API_34(AVD) - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/st/Android-Workplace/ElectroluxInterview/app/build/outputs/androidTest-results/connected/debug/Pixel_8_API_34(AVD) - 14/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/st/Android-Workplace/ElectroluxInterview/app/build/outputs/androidTest-results/connected/debug/Pixel_8_API_34(AVD) - 14/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
